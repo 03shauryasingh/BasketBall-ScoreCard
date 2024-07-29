@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BasketBall Scorecard</title>
     <link rel="stylesheet" href="index.css" />
-    <script src="index.js"></script>
   </head>
   <body>
     <div id="main">
@@ -25,11 +24,15 @@
           <div id="home-score" class="score">0</div>
           <div class="timercontainer">
             <div class="timerele">
-              <div class="timer">00:00</div>
+              <div id="countdownTimer" class="timer" onclick="startTImer()">
+                00:00
+              </div>
               <div class="timerbutton">
-                <button class="startbtn">Start</button>
+                <button class="startbtn" id="start-timer" onclick="">
+                  Start
+                </button>
 
-                <button class="endbtn">End</button>
+                <button class="endbtn" id="end-timer">End</button>
               </div>
             </div>
           </div>
@@ -41,44 +44,54 @@
           <div class="homebuttons">
             <div class="home-1-2">
               <div>
-                <button id="home1" class="buttons">1</button>
+                <button id="home1" class="buttons" onclick="home1()">1</button>
               </div>
               <div>
-                <button id="home2" class="buttons">2</button>
+                <button id="home2" class="buttons" onclick="home2()">2</button>
               </div>
             </div>
 
             <div class="home-3-4">
               <div>
-                <button id="home3" class="buttons">4</button>
+                <button id="home3" class="buttons" onclick="home4()">4</button>
               </div>
               <div>
-                <button id="home4" class="buttons">6</button>
+                <button id="home4" class="buttons" onclick="home6()">6</button>
               </div>
             </div>
           </div>
 
           <!-- home button ends here -->
           <div class="newgame">
-            <button id="newgame" class="new-game">New Game</button>
+            <button id="newgame" class="new-game" onclick="newgamebtn()">
+              New Game
+            </button>
           </div>
           <!-- guest button starts here -->
           <div class="guestbuttons">
             <div class="guest-1-2">
               <div>
-                <button id="guest1" class="buttons">1</button>
+                <button id="guest1" class="buttons" onclick="guest1()">
+                  1
+                </button>
               </div>
               <div>
-                <button id="guest2" class="buttons">2</button>
+                <button id="guest2" class="buttons" onclick="guest2()">
+                  2
+                </button>
               </div>
             </div>
 
             <div class="guest-3-4">
               <div>
-                <button id="guest3" class="buttons">4</button>
+                <button id="guest3" class="buttons" onclick="guest4()">
+                  4
+                </button>
               </div>
               <div>
-                <button id="guest4" class="buttons">6</button>
+                <button id="guest4" class="buttons" onclick="guest6()">
+                  6
+                </button>
               </div>
             </div>
           </div>
@@ -87,5 +100,6 @@
         </div>
       </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
