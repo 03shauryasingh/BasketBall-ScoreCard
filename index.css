@@ -44,11 +44,6 @@
   color: grey;
 }
 
-#heading {
-  text-align: center;
-  color: white;
-}
-
 #main {
   margin: 0;
   position: absolute;
@@ -59,6 +54,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#heading {
+  text-align: center;
+  color: white;
+}
+
+.name {
+  display: flex;
+  justify-content: space-around;
+  color: aliceblue;
+
+  width: 100%;
+  height: 10%;
 }
 
 #scoreboard {
@@ -74,20 +83,20 @@
   padding: 10px;
 }
 
-.name {
-  display: flex;
-  justify-content: space-around;
-  color: aliceblue;
-  margin-top: 30px;
-  width: 100%;
-  height: 10%;
-}
-
 .allscore {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
   height: 20%;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  width: 100%;
+  height: 80%;
+  color: #dfd9d9;
 }
 
 .score {
@@ -107,29 +116,22 @@
 
 .timercontainer {
   display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100%;
   width: 30%;
 }
 
 .timer {
-  width: 100%;
-}
-
-.time {
-  width: 100%;
-  display: flex;
-  height: 30%;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  color: white;
+  font-family: clock;
 }
 
 .timerbutton {
   display: flex;
+  gap: 30px;
   justify-content: space-evenly;
   align-items: center;
-
-  height: 70%;
+  height: 10%;
 }
 
 .startbtn {
@@ -146,8 +148,9 @@
 
 #buttons {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   height: 50%;
+  width: 100%;
 }
 
 .homebuttons {
@@ -155,17 +158,16 @@
   align-items: center;
   justify-content: center;
   width: 50%;
-  height: 90%;
-  gap: 50px;
+  height: 100%;
+  gap: 100px;
 }
 
-.guestbuttons {
-  display: flex;
+#newgame {
+  font-size: 100%;
+  color: white;
   align-items: center;
-  justify-content: center;
-  width: 50%;
-  gap: 50px;
-  width: 50%;
+  width: fit-content;
+  height: fit-content;
 }
 
 .newgame {
@@ -174,19 +176,16 @@
   display: flex;
   justify-content: center;
   align-self: center;
-  width: 30%;
-  height: 60%;
+  width: 40%;
+  height: 100%;
 }
 
-.new-game {
+.guestbuttons {
+  display: flex;
+  align-items: center;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 2rem;
-  color: white;
-  align-items: center;
-  width: 70%;
-  height: 30%;
+  width: 50%;
+  gap: 50px;
 }
 
 .home-1-2 {
