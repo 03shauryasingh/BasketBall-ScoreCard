@@ -1,0 +1,213 @@
+@font-face {
+  font-family: "clock";
+  src: url("/fonts/CursedTimerUlil-Aznm.ttf");
+}
+
+.buttons,
+.new-game,
+.startbtn,
+.endbtn {
+  background-color: #eee;
+  border: none;
+  padding: 1rem;
+  font-size: 50px;
+  width: 80px;
+  height: 90px;
+  border-radius: 1rem;
+  color: lightcoral;
+  box-shadow: 0 0.4rem #dfd9d9;
+  cursor: pointer;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.buttons:active,
+.new-game:active,
+.startbtn:active,
+.endbtn:active {
+  color: white;
+  box-shadow: 0 0.2rem #dfd9d9;
+  transform: translateY(0.2rem);
+}
+
+.buttons:hover:not(:disabled),
+.new-game:not(:disabled),
+.startbtn:hover:not(:disabled),
+.endbtn:hover:not(:disabled) {
+  background: lightcoral;
+  color: white;
+  text-shadow: 0 0.1rem #bcb4b4;
+}
+
+.buttons:disabled,
+.new-game:disabled {
+  cursor: auto;
+  color: grey;
+}
+
+#heading {
+  text-align: center;
+  color: white;
+}
+
+#main {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#scoreboard {
+  width: 97%;
+  height: 100%;
+  background-image: linear-gradient(
+    85.2deg,
+    rgba(33, 3, 40, 1) 7.5%,
+    rgba(65, 5, 72, 1) 88.7%
+  );
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.name {
+  display: flex;
+  justify-content: space-around;
+  color: aliceblue;
+  margin-top: 30px;
+  width: 100%;
+  height: 10%;
+}
+
+.allscore {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 20%;
+}
+
+.score {
+  margin-top: 30px;
+  font-family: clock;
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  width: 150px;
+  height: 120px;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+.timercontainer {
+  display: flex;
+  width: 30%;
+}
+
+.timer {
+  width: 100%;
+}
+
+.time {
+  width: 100%;
+  display: flex;
+  height: 30%;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.timerbutton {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  height: 70%;
+}
+
+.startbtn {
+  font-size: 20px;
+  width: 100px;
+  height: 50px;
+}
+
+.endbtn {
+  font-size: 20px;
+  width: 100px;
+  height: 50px;
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-evenly;
+  height: 50%;
+}
+
+.homebuttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 90%;
+  gap: 50px;
+}
+
+.guestbuttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  gap: 50px;
+  width: 50%;
+}
+
+.newgame {
+  color: white;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 50%;
+  height: 80%;
+}
+
+.new-game {
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  align-items: center;
+  width: 70%;
+  height: 30%;
+}
+
+.home-1-2 {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+}
+
+.home-3-4 {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+}
+
+.guest-1-2 {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+}
+
+.guest-3-4 {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+}

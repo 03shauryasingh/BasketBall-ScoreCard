@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BasketBall Scorecard</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <div id="scoreboard">
+        <h1 id="heading">Basketball Scorecard</h1>
+        <div class="name">
+          <div class="team-name">
+            <h1>Home</h1>
+          </div>
+
+          <div class="team-name">
+            <h1>Guest</h1>
+          </div>
+        </div>
+
+        <div class="allscore">
+          <div id="home-score" class="score">0</div>
+          <div class="timercontainer">
+            <div class="timer">
+              <div class="time">Time</div>
+
+              <div class="timerbutton">
+                <button class="startbtn">Start</button>
+
+                <button class="endbtn">End</button>
+              </div>
+            </div>
+          </div>
+          <div id="guest-score" class="score">0</div>
+        </div>
+        <!-- button start here -->
+        <div id="buttons">
+          <!-- home button starts here -->
+          <div class="homebuttons">
+            <div class="home-1-2">
+              <div>
+                <button id="home1" class="buttons">1</button>
+              </div>
+              <div>
+                <button id="home2" class="buttons">2</button>
+              </div>
+            </div>
+
+            <div class="home-3-4">
+              <div>
+                <button id="home3" class="buttons">4</button>
+              </div>
+              <div>
+                <button id="home4" class="buttons">6</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- home button ends here -->
+          <div class="newgame">
+            <button id="newgame" class="new-game">New Game</button>
+          </div>
+          <!-- guest button starts here -->
+          <div class="guestbuttons">
+            <div class="guest-1-2">
+              <div>
+                <button id="guest1" class="buttons">1</button>
+              </div>
+              <div>
+                <button id="guest2" class="buttons">2</button>
+              </div>
+            </div>
+
+            <div class="guest-3-4">
+              <div>
+                <button id="guest3" class="buttons">4</button>
+              </div>
+              <div>
+                <button id="guest4" class="buttons">6</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- guest button end here -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
